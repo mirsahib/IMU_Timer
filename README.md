@@ -3,11 +3,15 @@
 #  How to use
 
 #### Step 1 Choose the label
+<img src="https://github.com/mirsahib/IMU_Timer/blob/master/Images/Screenshot_2019-10-07-11-58-18-642_com.example.myapplication.png" alt="alt text" width="520" height="720">
+
+
 ![alt text](https://github.com/mirsahib/IMU_Timer/blob/master/Images/Screenshot_2019-10-07-11-58-18-642_com.example.myapplication.png "Logo Title Text 1")
 
 The app will switch to another activity
 
 #### Step 2 Enter new Label or choose from existing label
+
 ![alt text](https://github.com/mirsahib/IMU_Timer/blob/master/Images/Screenshot_2019-10-07-11-53-20-008_com.example.myapplication.png "Logo Title Text 1")
 
 #### Step 3 Enter new Label or choose from existing label
