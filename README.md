@@ -1,7 +1,7 @@
 # IMU Timer!
 
 # Build file
-the build app can be found from apk folder
+the build app can be found in apk folder
 
 #  How to use
 
