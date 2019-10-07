@@ -10,10 +10,6 @@ the build app can be found in apk folder
 
 The app will switch to another activity
 
-#### Step 2 Enter new Label or choose from existing label
-<img src="https://github.com/mirsahib/IMU_Timer/blob/master/Images/Screenshot_2019-10-07-11-53-20-008_com.example.myapplication.png" alt="alt text" width="332" height="720">
-
-
 #### Step 3 Enter new Label or choose from existing label
 <img src="https://github.com/mirsahib/IMU_Timer/blob/master/Images/Screenshot_2019-10-07-11-53-20-008_com.example.myapplication.png " alt="alt text" width="332" height="720">
 
