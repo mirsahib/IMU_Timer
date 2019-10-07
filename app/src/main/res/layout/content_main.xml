@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="-1dp"
+    tools:layout_editor_absoluteY="60dp"
+    tools:showIn="@layout/activity_main">
+
+    <Button
+        android:id="@+id/startMovBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#4CAF50"
+        android:onClick="startMov"
+        android:text="@string/star_movement"
+        app:layout_constraintBottom_toTopOf="@+id/stopExBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/startExBtn"
+        app:layout_constraintTop_toBottomOf="@+id/labelView" />
+
+    <Button
+        android:id="@+id/startExBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#4CAF50"
+        android:onClick="startEx"
+        android:text="@string/start_activity"
+        app:layout_constraintBottom_toTopOf="@+id/stopMovBtn"
+        app:layout_constraintEnd_toStartOf="@+id/startMovBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choose_labelBtn" />
+
+    <Button
+        android:id="@+id/stopMovBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#F44336"
+        android:onClick="stopMov"
+        android:text="@string/stop_movement"
+        app:layout_constraintBottom_toTopOf="@+id/timeView"
+        app:layout_constraintEnd_toStartOf="@+id/stopExBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startExBtn" />
+
+    <Button
+        android:id="@+id/stopExBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#F44336"
+        android:onClick="stopEx"
+        android:text="@string/stop_activity"
+        app:layout_constraintBottom_toTopOf="@+id/timeView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/stopMovBtn"
+        app:layout_constraintTop_toBottomOf="@+id/startMovBtn" />
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="235dp"
+        android:layout_height="41dp"
+        android:onClick="saveToFile"
+        android:text="@string/save_to_file"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/clearBtn"
+        app:layout_constraintTop_toBottomOf="@+id/fileName" />
+
+    <TextView
+        android:id="@+id/timeView"
+        android:layout_width="371dp"
+        android:layout_height="145dp"
+        android:background="@color/Wheat"
+        android:scrollbars="vertical"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/fileName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stopMovBtn" />
+
+    <EditText
+        android:id="@+id/fileName"
+        android:layout_width="368dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:hint="@string/enter_participant_name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/saveBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeView"
+        tools:ignore="Autofill" />
+
+    <Button
+        android:id="@+id/clearBtn"
+        android:layout_width="138dp"
+        android:layout_height="41dp"
+        android:onClick="clearTextView"
+        android:text="@string/clear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/saveBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fileName" />
+
+    <Button
+        android:id="@+id/choose_labelBtn"
+        android:layout_width="145dp"
+        android:layout_height="46dp"
+        android:text="@string/choose_label"
+        app:layout_constraintBottom_toTopOf="@+id/startExBtn"
+        app:layout_constraintEnd_toStartOf="@+id/labelView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/labelView"
+        android:layout_width="146dp"
+        android:layout_height="42dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/startMovBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/choose_labelBtn"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>
