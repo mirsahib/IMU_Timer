@@ -207,6 +207,7 @@ public class MainActivity extends AppCompatActivity {
         timeView.setText("");
         timeString = "";
         fileName.setText("");
+        fileName.setEnabled(false);
         startExBtn.setEnabled(false);
         startMovBtn.setEnabled(false);
         stopMovBtn.setEnabled(false);
